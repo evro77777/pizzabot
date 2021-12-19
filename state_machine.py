@@ -69,13 +69,13 @@ class Handler(object):
                 self.data['answer'] = "/start - начать оформление нового заказа"
                 return self.data
             elif self.data['fsm'].state == 'size_selection':
-                self.data['answer'] = "Выбирите 'большую' или 'маленькую' . '/start'- начать заново "
+                self.data['answer'] = "Выберите 'большую' или 'маленькую' . '/start'- начать заново "
                 return self.data
             elif self.data['fsm'].state == 'payment_method':
-                self.data['answer'] = "Выбирите 'наличкой' или 'безнал' . '/start'- начать заново"
+                self.data['answer'] = "Выберите 'наличкой' или 'безнал' . '/start'- начать заново"
                 return self.data
             elif self.data['fsm'].state == 'check_order':
-                self.data['answer'] = "Выбирите 'Да' или 'Нет'. '/start'- начать заново"
+                self.data['answer'] = "Выберите 'Да' или 'Нет'. '/start'- начать заново"
                 return self.data
             else:
                 self.data['answer'] = "/start - начать оформление нового заказа"
